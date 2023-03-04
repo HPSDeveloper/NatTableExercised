@@ -5,4 +5,3 @@ target
 #lfs/hooks directory should be created within the .git folder, but if a git exe is used that has not installed GIT LFS (https://git-lfs.com), then it might happen that we have this folders in the workspace:
 lfs
 hooks
-lib1/Nat*.jar
