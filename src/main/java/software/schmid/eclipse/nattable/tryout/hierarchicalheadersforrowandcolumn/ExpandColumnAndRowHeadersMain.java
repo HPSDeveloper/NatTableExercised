@@ -1,7 +1,5 @@
 package software.schmid.eclipse.nattable.tryout.hierarchicalheadersforrowandcolumn;
 
-import java.util.AbstractMap;
-
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -20,7 +18,7 @@ public class ExpandColumnAndRowHeadersMain {
 	private static Shell setupShell() {
 		Display display = new Display();
 		Shell shell = new Shell(display);
-		shell.setSize(300, 130);
+		shell.setSize(900, 390);
 		shell.setText("Tree List Table with expand/collapse feature for Columns and Rows");
 		shell.setLayout(new RowLayout());
 		return shell;
@@ -33,7 +31,9 @@ public class ExpandColumnAndRowHeadersMain {
 				shell.getDisplay().sleep();
 			}
 		}
-		shell.getDisplay().dispose();
+		if(!shell.isDisposed()) {
+			shell.getDisplay().dispose();
+		}
 	}
 
 }
